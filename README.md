@@ -2,6 +2,10 @@
 A lightweight Python script that leverages OpenAI's GPT models to automatically summarize emails, extract action items, and identify sender intent.
 
 
+
+
+
+
 **Features**
 Smart Summarization – Condenses lengthy emails into 2-3 concise sentences
 
@@ -12,6 +16,11 @@ Intent Detection – Classifies emails as informational, requests, or follow-ups
 Secure API Handling – Uses environment variables for API key management
 
 Customizable Prompts – Easily modify the system prompt to fit different use cases
+
+
+
+
+
 
 
 **Tech Stack**
@@ -26,3 +35,23 @@ The script sends a system prompt defining the AI's role, along with a raw email,
 2.Any action items or deadlines found
 
 3.The sender's intent (inform / request / follow-up)
+
+
+
+
+
+
+Example Output
+
+Summary: Your Shopee order #260505JWQW8CYR from bamnatural has been delivered. 
+You need to confirm receipt in the Shopee App to release payment, and it's 
+recommended to record an unboxing video for return/refund protection.
+
+Action Items: Confirm order acceptance in Shopee App; Record unboxing video/photos
+Deadlines: Payment auto-transfers if no response received
+
+
+
+
+
+
