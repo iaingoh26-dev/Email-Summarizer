@@ -105,33 +105,6 @@ One of the initial challenges was ensuring that the AI generated responses in a 
 **Solution:**  
 A structured system prompt was implemented to clearly define the expected output format, improving response consistency across different email types.
 
-### 2. Handling Different Email Formats
-
-Emails can vary significantly in structure, ranging from formal business messages to automated notifications and promotional content. Some emails contained excessive metadata or formatting that could affect summary quality.
-
-**Solution:**  
-The prompts were refined to focus on the most relevant content while ignoring unnecessary details, allowing the model to generate more concise and useful summaries.
-
-### 3. API Configuration and Authentication
-
-During development, managing API credentials securely was a challenge. Hardcoding API keys poses security risks and is not considered best practice.
-
-**Solution:**  
-Environment variables were used to store API credentials securely, preventing sensitive information from being exposed in the source code.
-
-### 4. Selecting an Appropriate AI Model
-
-Different OpenAI models offer varying trade-offs between response quality, speed, and cost. Choosing the right model required experimentation and evaluation.
-
-**Solution:**  
-Several models were tested before selecting a lightweight model that provided an acceptable balance between performance and efficiency for email summarization tasks.
-
-### 5. Managing Token Limits
-
-Long emails may exceed context limits or increase API usage costs. This became apparent when testing with larger email bodies and threads.
-
-**Solution:**  
-The project was designed around concise email inputs, and future improvements include implementing text chunking and preprocessing techniques to handle larger documents efficiently.
 
 ---
 
