@@ -1,51 +1,113 @@
-**AI Email Summarizer**
-A lightweight Python script that leverages OpenAI's GPT models to automatically summarize emails, extract action items, and identify sender intent.
+# AI Email Summarizer using OpenAI API
 
+## Overview
 
+This project is a simple AI-powered email summarization tool built using Python and the OpenAI API. It processes email content and generates concise summaries while extracting action items, deadlines, and the sender's intent.
 
+The goal of this project is to demonstrate prompt engineering, API integration, and practical applications of Large Language Models (LLMs) in automating everyday business tasks.
 
+---
 
+## Features
 
-**Features**
-Smart Summarization – Condenses lengthy emails into 2-3 concise sentences
+- Generates concise 2–3 sentence email summaries
+- Extracts action items and important deadlines
+- Identifies sender intent:
+  - Inform
+  - Request
+  - Follow-up
+- Uses structured prompts for consistent outputs
+- Integrates directly with the OpenAI API
 
-Action Item Extraction – Identifies deadlines, tasks, and required responses
+---
 
-Intent Detection – Classifies emails as informational, requests, or follow-ups
+## Technologies Used
 
-Secure API Handling – Uses environment variables for API key management
+- Python
+- OpenAI API
+- Prompt Engineering
+- Environment Variables for API Key Management
 
-Customizable Prompts – Easily modify the system prompt to fit different use cases
+---
 
+## How It Works
 
+1. Configure the OpenAI API key using environment variables.
+2. Define a system prompt that instructs the AI on how to process emails.
+3. Pass email content as a user prompt.
+4. Send the prompts to the OpenAI model.
+5. Receive and display a structured summary.
 
+---
 
+## Sample Input
 
+```text
+Hi iaingoh1,
 
+We are pleased to inform you that #260505JWQW8CYR has been delivered.
 
-**Tech Stack**
--Python 3.x
--OpenAI API (GPT-4.1 Nano)
+Please confirm and accept the order in the Shopee App. Once you confirm, payment will be made to bamnatural.
 
- **How It Works**
-The script sends a system prompt defining the AI's role, along with a raw email, to OpenAI's API. The model returns:
+ORDER DETAILS
 
-1.A concise 2-3 sentence summary
+Order ID: #260505JWQW8CYR
+Order Date: 05/05/2026 11:20:15
+Seller: bamnatural
+```
 
-2.Any action items or deadlines found
+## Sample Output
 
-3.The sender's intent (inform / request / follow-up)
+```text
+Summary:
+The seller has informed the customer that the order has been successfully delivered. The customer is requested to confirm receipt through the platform so payment can be released to the seller.
 
+Action Items:
+- Confirm receipt of the order in the application.
+- Record an unboxing video or take photos of the package for potential return or refund requests.
 
+Sender Intent:
+Inform / Request
+```
 
+---
 
+## Skills Demonstrated
 
+- API Integration
+- Prompt Engineering
+- Large Language Model (LLM) Applications
+- Text Processing
+- Python Programming
+- Environment Variable Management
+- AI-Assisted Workflow Automation
 
-Example Output
+---
 
-<img width="995" height="85" alt="image" src="https://github.com/user-attachments/assets/29dae765-828f-4e9d-b5a4-1892158fda7e" />
+## Key Learning Outcomes
 
+Through this project, I gained hands-on experience with:
 
+- Designing effective system prompts
+- Structuring conversations for chat-based AI models
+- Integrating external AI services into Python applications
+- Building practical productivity tools using generative AI
+
+---
+
+## Future Improvements
+
+- Process multiple emails in batches
+- Export summaries to PDF or Excel
+- Add a graphical user interface (GUI)
+- Support email ingestion directly from Gmail or Outlook
+- Implement sentiment analysis and priority scoring
+
+---
+
+## Author
+
+Developed as a learning project to explore practical applications of Generative AI and OpenAI APIs in business communication workflows.
 
 
 
