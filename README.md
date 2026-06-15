@@ -43,12 +43,7 @@ The script sends a system prompt defining the AI's role, along with a raw email,
 
 Example Output
 
-Summary: Your Shopee order #260505JWQW8CYR from bamnatural has been delivered. 
-You need to confirm receipt in the Shopee App to release payment, and it's 
-recommended to record an unboxing video for return/refund protection.
-
-Action Items: Confirm order acceptance in Shopee App; Record unboxing video/photos
-Deadlines: Payment auto-transfers if no response received
+<img width="995" height="85" alt="image" src="https://github.com/user-attachments/assets/29dae765-828f-4e9d-b5a4-1892158fda7e" />
 
 
 
